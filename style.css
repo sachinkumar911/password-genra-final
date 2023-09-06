@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.conatainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+}
+
+.conatainer .heading {
+  font-family: "Black Ops One", cursive;
+  color: aliceblue;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.display-container {
+  width: 30%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: rgb(91, 105, 118);
+  position: relative;
+  margin-top: 1.8%;
+  margin-bottom: 1.2%;
+  border-radius: 2%;
+  border-bottom: 0.5rem solid rgb(103, 98, 98);
+  box-shadow: 5px 5px 10px rgb(187, 182, 182);
+  padding: 10px 3px;
+}
+
+.display {
+    width: 80%;
+  text-align: left;
+  height: 100%;
+  border-radius: 5%;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  color: aliceblue;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+ 
+}
+.button-s{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+[data-copy] {
+  height: 70%;
+  width: 40%;
+  background: transparent;
+  border: none;
+}
+[data-copymsg]{
+    font-size: 0.6rem;
+}
+[data-copy] img {
+  height: 100%;
+  width: 100%;
+}
+
+.input-container {
+  width: 30%;
+  padding: 25px 0;
+  margin-bottom: 1.4%;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  flex-direction: column;
+  background-color: rgb(91, 105, 118);
+  border-radius: 2%;
+  position: relative;
+  border-bottom: 0.5rem solid rgb(103, 98, 98);
+}
+
+.passwod-length {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  color: aliceblue;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+[data-leghtslider] {
+  width: 80%;
+  margin-left: 8%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+
+.checkboxes {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  color: aliceblue;
+  padding-left: 8%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 550;
+}
+.checkboxes div {
+  width: 80%;
+  display: flex;
+  padding-top: 2%;
+}
+.check {
+  width: 10%;
+  height: 80%;
+  border-radius: 10%;
+}
+
+.strenght {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 9%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 550;
+  font-size: 1.5rem;
+  color: aliceblue;
+  padding-right: 9%;
+  padding-top: 5%;
+}
+
+.indicator {
+  filter: blur(0.104rem);
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 8px;
+  height: 100%;
+  border-radius: 5rem;
+  border-bottom: 0.5rem solid rgb(103, 98, 98);
+  box-shadow: 5px 5px 5px rgb(103, 98, 98);
+  font-family: "Black Ops One", cursive;
+  font-size: 1.3rem;
+  background-color: rgb(91, 105, 118);
+  color: aliceblue;
+  box-shadow: 5px 5px 10px rgb(187, 182, 182);
+}
+
+@media (width<1080px) {
+  .input-container {
+    width: 35%;
+  }
+  .conatainer .heading {
+    font-size: 1.8rem;
+  }
+  .display-container {
+    width: 35%;
+  }
+  .display{
+    font-size:1rem ;
+  }
+
+  .generate-btn{
+    font-size: 1.2rem;
+  }
+  
+
+  
+}
+
+@media (width<880px) {
+  .input-container {
+    width: 40%;
+  }
+  .conatainer .heading {
+    font-size: 1.5rem;
+  }
+  .display-container {
+    width: 40%;
+  }
+  .display{
+    font-size: 0.95rem;
+  }
+  .conatainer .heading{
+    font-size:1.5rem ;
+  }
+  .generate-btn{
+    font-size: 1.1rem;
+  }
+}
+@media (width<715px) {
+  .input-container {
+    width: 45%;
+  }
+  .conatainer .heading {
+    font-size: 1.2rem;
+  }
+  .display-container {
+    width: 45%;
+  }
+  .display{
+    font-size: 0.90rem;
+  } .conatainer .heading{
+    font-size:1.5rem ;
+  }
+  .generate-btn{
+    font-size: 1rem;
+  }
+}
+@media (width<660px) {
+  .input-container {
+    width: 50%;
+  }
+  .conatainer .heading {
+    font-size: 1.1rem;
+  }
+  .display-container {
+    width: 50%;
+  }
+  .passwod-length {
+    font-size: 1rem;
+  }
+  .checkboxes {
+    font-size: 1rem;
+  }
+  .display{
+    font-size: 0.85rem;
+  }
+  .conatainer .heading{
+    font-size:1.5rem ;
+  }
+  .generate-btn{
+    font-size: 1rem;
+  }
+  
+}
+@media (width<520px) {
+  .input-container {
+    width: 58%;
+  }
+  .conatainer .heading {
+    font-size: 0.98rem;
+  }
+  .display-container {
+    width: 58%;
+  }
+  .passwod-length {
+    font-size: 0.8rem;
+  }
+  .display{
+    font-size: 0.85rem;
+  }
+  .conatainer .heading{
+    font-size:1.4rem ;
+  }
+  .generate-btn{
+    font-size:0.9rem;
+  }
+}
+
+@media (width<385px) {
+  .input-container {
+    width: 78%;
+  }
+  .display-container {
+    width: 78%;
+  }
+  .passwod-length {
+    font-size: 0.7rem;
+  }
+  .display{
+    font-size: 0.79rem;
+  }
+  .conatainer .heading{
+    font-size:1.3rem ;
+  }
+  .generate-btn{
+    font-size: 0.85rem;
+  }
+}
